@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<!-- Google's Breath -->
+
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold' rel='stylesheet' type='text/css'>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="description" content="Education Facility Planners working from Singapore and abroad." />
+
+<meta name="keywords" content="Architecture, Design, Site Assessment, Master Planning, New Building Design, Internationl School, American School, American Embassy, Singapore, Kuala Lumpur, New Delhi, South East Asia" />
+
+<title><txp:page_title /></title>
+
+<link rel="home" href="<txp:site_url />" />
+
+<!-- Feeds Enabled  -->
+<txp:feed_link flavor="atom" format="link" label="Atom" />
+<txp:feed_link flavor="rss" format="link" label="RSS" />
+
+<!-- CSS -->
+<txp:css format="link" />
+<!-- [if lte IE 6]  --><link href="<txp:site_url />css/ie6.css" type="text/css" rel="stylesheet" media="screen" /><!-- [endif] -->
+<link rel="stylesheet" type="text/css" href="/css/slimbox.css" />
+
+<txp:if_section name="default">
+<link rel="stylesheet" type="text/css" href="<txp:site_url />home.css" />
+</txp:if_section>
+
+
+<!-- XML-RPC Really Simple Discovery -->
+<txp:rsd />
+	
+<!-- Dragon's Breath -->
+<script type="text/javascript" src="<txp:site_url />js/mootools.js"></script>
+<script type="text/javascript" src="<txp:site_url />js/slimbox.js"></script>
+	
+</head>
+
+<body id="<txp:if_section name="">front<txp:else /><txp:section /></txp:if_section>">
+
+<!-- accessibility -->
+<div id="accessibility">
+<ul><li><a href="#content"><txp:text item="go_content" /></a></li>
+<li><a href="#sidebar"><txp:text item="go_nav" /></a></li></ul>
+</div>
+
+<div id="container">
+
+<!-- left -->
+<div id="sidebar">
+
+<txp:if_section name="projects">
+
+<h2><a href="<txp:site_url />"><span class="dgla">DGLA</span><span class="rchitects">rchitects</span></a></h2>
+
+
+<h2><txp:site_slogan /></h2>
+
+
+<txp:else />
+
+<h2><a href="<txp:site_url />"><span class="dgla">DGLA</span><span class="rchitects">rchitects</span></a></h2>
+
+<txp:if_section name="about">
+<h2><txp:site_slogan /></h2>
+</txp:if_section>
+
+</txp:if_section>
+
+<txp:section_list default_title='<txp:text item="DGL Architects" />' include_default="0" exclude="testimonials, about" wraptag="ul" break="li">
+<a href="<txp:site_url />about">About<txp:if_section name="about"> &#8592;</txp:if_section></a><br />
+<txp:section link="1" title="1" class=''/>
+<li><a href="<txp:site_url />about#contact">Contact</a></li>
+<li><a href="<txp:site_url />testimonials">Testimonials</a></li>
+<txp:if_section name='<txp:section />'>&#8592;</txp:if_section>
+
+
+<txp:if_section name="projects">
+
+<txp:article_custom section='<txp:section />' wraptag="ul" break="li" sort="Posted asc">
+<txp:permlink class='<txp:if_article_id>active-article</txp:if_article_id>'><txp:title /></txp:permlink>
+</txp:article_custom>
+
+</txp:if_section>
+
+
+</txp:section_list>
+
+</div>
+
+<!-- Content -->
+<div id="content">
+
+<!-- [if] Search [then] Results here -->
+<txp:if_search>
+<h2><txp:text item="search_results" />: <txp:page_url type="q" /></h2>
+</txp:if_search>
+
+<txp:if_section name="about">
+<!-- About Page -->
+<div class="hfeed">
+
+<txp:if_individual_article>
+<txp:article form="profile" />
+<txp:else />
+<txp:article_custom form="profile" id="2" limit="1"/>
+<txp:article_custom form="profile" id="17" limit="1"/>
+<txp:article_custom form="profile" id="18" limit="1"/>
+</txp:if_individual_article>
+
+
+<div id="contact">
+
+
+<h2>Contact DGLA</h2>
+
+<div id="hcard-Derek-Goad" class="vcard">
+
+
+<span class="address-block">
+Email <a class="url fn" href="http://dglarchitects.com">Derek </a> at <a class="email" href="mailto:design@viclink.com">design@viclink.com</a>
+<div class="tel">+65 9721 2301</div>
+<div class="tel">+1 503 435 0681</div>
+</span>
+
+<hr />
+
+<span class="address-block">
+<div class="org"><a class="url" href="http://dglarchitects.com">DGLArchitects</a>
+</div>
+<div class="adr">
+<div class="street-address">33 Colchester Grove</div>
+<span class="region">Singapore</span>
+, 
+<span class="postal-code">558 372</span>
+</div><!-- /adr -->
+</span>
+
+</div><!-- /hcard-Derek-Goad -->
+
+</div><!-- /contact -->
+
+<hr />
+<h2>Testimonials</h2>
+<txp:article_custom section="testimonials" form="testimonial" limit="10" />
+</div>
+</txp:if_section>
+
+<txp:if_section name="projects">
+<!-- Projects Page -->
+<div class="hfeed">
+<txp:article limit="15" sort="position asc" />
+</div>
+</txp:if_section>
+
+<txp:if_section name="testimonials">
+<!-- Testimonials -->
+<h1>Testimonial</h1>
+<div class="hfeed">
+<txp:article form="testimonial" limit="15" sort="position asc" />
+</div>
+</txp:if_section>
+
+
+<txp:if_section name="default">
+<!-- Home -->
+
+<div class="hfeed">
+<txp:article_custom form="lofi" id="3" limit="1"/>
+</div>
+</txp:if_section>
+
+
+
+	</div>
+
+<!-- footer -->
+	<div id="foot"><a href="<txp:site_url />about#contact">Contact</a> &middot; <a href="<txp:site_url />about">About</a> &middot; <a href="<txp:site_url />testimonials">Testimonials</a> &middot; <a href="<txp:site_url />projects">Projects</a></div>
+
+</div>
+
+<div id="left"></div>
+<div id="right"></div>
+<div id="top"></div>
+<div id="bottom"></div>
+
+<!-- Google's Breath -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-159014-12");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+
+</body>
+</html>

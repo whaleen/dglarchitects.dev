@@ -1,0 +1,6 @@
+<a rel="lightbox-{category}" href="{url}"
+     title="{caption}">
+ <txp:thumbnail id="{id}" class="thumb" />
+<p>{caption}</p>
+</a>
+

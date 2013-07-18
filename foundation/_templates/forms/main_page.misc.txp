@@ -1,0 +1,44 @@
+<section role="main">
+
+<div class="row">
+
+<div class="eight columns">
+
+<h3><txp:page_title /></h3>
+      		      		
+<txp:if_individual_article>
+<txp:article>
+<txp:body />
+</txp:article>
+<txp:else />
+
+<txp:article_custom id="3">
+<txp:body />
+</txp:article_custom>
+
+</txp:if_individual_article>
+
+</div>
+      		
+
+<div class="four columns">
+
+
+<h4>Projects</h4>
+<ul class="disc">      		  
+<txp:article_custom section="projects">
+<li><a href="<txp:permlink />" title="<txp:title />"><txp:title /></a></li>
+</txp:article>
+</ul>
+
+
+
+<blockquote><i class="foundicon-quote"></i>
+  <p>DGLA has consistently provided excellent service to the <a href="http://www.iskl.edu.my/">International School of Kuala Lumpur</a>. This team of three combines experience and strong technical skills with appealing people skills.
+  <cite>Paul Chmelik Ð Head of School at International School of Kuala Lumpur
+</cite></p>
+</blockquote>
+
+</div>
+</div>
+</section>

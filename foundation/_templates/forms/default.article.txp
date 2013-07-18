@@ -1,0 +1,15 @@
+<txp:if_individual_article>
+<h1 class="entry-title"><txp:permlink><txp:title /></txp:permlink></h1>
+<txp:else />
+<h1 class="entry-title"><txp:permlink><txp:title /></txp:permlink></h1>
+</txp:if_individual_article>
+
+<div class="entry-content">
+<txp:body />
+</div>
+
+<div class="clear"></div>
+
+
+<txp:category title="1" link="1" />
+

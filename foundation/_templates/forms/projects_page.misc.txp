@@ -1,0 +1,17 @@
+<txp:article_custom section="projects">
+
+
+
+
+
+<div class="four columns">
+<a href="#">
+<div class="panel" style="background-image: url(); height:150px;">
+<h5><txp:title /></h5>
+<p><txp:excerpt /></p>
+</div>
+</a>
+</div>
+
+
+</txp:article_custom>

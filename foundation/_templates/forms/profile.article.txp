@@ -1,0 +1,11 @@
+<txp:article_image class="left" />
+
+<h1 class="entry-title"><txp:permlink><txp:title /></txp:permlink></h1>
+
+<div class="entry-content">
+<txp:body />
+
+</div>
+
+<div class="clear">&nbsp;</div>
+<hr />

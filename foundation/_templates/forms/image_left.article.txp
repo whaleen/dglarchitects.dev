@@ -1,0 +1,7 @@
+<div class="left"><a rel="lightbox-{category}" href="{url}"
+     title="{caption}">
+ <txp:thumbnail id="{id}"/>
+</a><br />
+
+<p>{caption}</p>
+</div>

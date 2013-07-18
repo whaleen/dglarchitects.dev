@@ -1,0 +1,29 @@
+<div class="row-fluid">
+
+
+<ul class="thumbnails">
+<li class="span12">
+<div class="thumbnail">
+<img src="<txp:glx_gravatar email='<txp:cbe_frontauth_whois type="email" />' format="url" size="512" />" alt="">
+
+<div class="padded muted">
+
+<h3 class=""><txp:cbe_frontauth_whois type="RealName" format="" wraptag="" break="" class="" breakclass="" /></h3>
+<p><txp:cbe_frontauth_whois type="name" format="" wraptag="" break="" class="" breakclass="" />
+</p>
+<hr />
+		<ul class="unstyled">
+		<li><i class="icon-map-marker"></i> {location}
+		<li><i class="icon-link"></i> {url}
+		<li><i class="icon-time"></i> {last-access}
+		</ul>
+<hr />
+
+<form action="/textstrap.dev/" method="post">
+<input type="submit" value="Logout" class="publish"><input type="hidden" value="1" name="p_logout">
+</form>
+
+</div>		
+    </div>
+  </li>
+</ul>
