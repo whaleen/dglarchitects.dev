@@ -12,13 +12,17 @@
 
 <meta name="description" content="Education Facility Planners working from Singapore and abroad." />
 
+
+
+<!--
 <meta name="keywords" content="Architecture, Design, Site Assessment, Master Planning, New Building Design, Internationl School, American School, American Embassy, Singapore, Kuala Lumpur, New Delhi, South East Asia" />
+-->
 
 <title><txp:page_title /></title>
 
 <link rel="home" href="<txp:site_url />" />
 
-<!-- Feeds Enabled  -->
+<!-- Project Feed available  -->
 <txp:feed_link flavor="atom" format="link" label="Atom" />
 <txp:feed_link flavor="rss" format="link" label="RSS" />
 
@@ -30,14 +34,7 @@
 <txp:if_section name="default">
 <link rel="stylesheet" type="text/css" href="<txp:site_url />home.css" />
 </txp:if_section>
-
-
-<!-- XML-RPC Really Simple Discovery -->
-<txp:rsd />
 	
-<!-- Dragon's Breath -->
-<script type="text/javascript" src="<txp:site_url />js/mootools.js"></script>
-<script type="text/javascript" src="<txp:site_url />js/slimbox.js"></script>
 	
 </head>
 
@@ -55,7 +52,7 @@
 <div id="sidebar">
 
 <txp:if_section name="projects">
-
+sdfdkfjlkj
 <h2><a href="<txp:site_url />"><span class="dgla">DGLA</span><span class="rchitects">rchitects</span></a></h2>
 
 

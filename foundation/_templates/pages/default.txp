@@ -6,35 +6,23 @@
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-  <meta charset="utf-8" />
 
-  <!-- Set the viewport width to device width for mobile -->
-  <meta name="viewport" content="width=device-width" />
+<meta charset="utf-8" />
 
-  <title><txp:site_name /></title>
+<!-- Set the viewport width to device width for mobile -->
+<meta name="viewport" content="width=device-width" />
 
-
- <!-- Included CSS Files (Uncompressed) -->
-  <!--
-  <link rel="stylesheet" href="stylesheets/foundation.css">
-  -->
+<title><txp:site_name /></title>
   
-  <!-- Included CSS Files (Compressed) -->
-  <link rel="stylesheet" href="<txp:site_url />foundation/stylesheets/foundation.min.css">
-  <link rel="stylesheet" href="<txp:site_url />foundation/stylesheets/app.css">
-  <link rel="stylesheet" href="<txp:site_url />foundation/stylesheets/offcanvas.css">
-
-  <script src="<txp:site_url />foundation/javascripts/modernizr.foundation.js"></script>
-
-
-  <link rel="stylesheet" href="<txp:site_url />foundation/stylesheets/general_foundicons.css">
-
+<!-- CSS -->
+<link rel="stylesheet" href="<txp:site_url />foundation/scss/foundation.css">
+<link rel="stylesheet" href="<txp:site_url />foundation/scss/normalize.css">
   
 
 </head>
 
 
-<body id="page" class="off-canvas hide-extras">
+<body id="page" class="">
 
   
 <div class="container">
@@ -42,13 +30,13 @@
 
 <header id="header" class="row">
 
-<div class="four columns phone-two">
+<div class="large-4 small-2 columns">
 
 </div><!-- /four columns  -->
 
-<div class="eight columns phone-two">
+<div class="large-8 small-2 columns">
 <nav id="menu" role="navigation" class="hide-for-small">
-<ul id="mainNav" class="nav-bar">
+<ul id="mainNav" class="inline-list">
 <li><a href="<txp:site_url />">DGLA</a></li>
 <li><a href="<txp:site_url />about">About</a></li>
 <li><a href="<txp:site_url />projects">Projects</a></li>
@@ -70,13 +58,13 @@
 
 <txp:if_section name="default">
 <div class="row">
-<txp:output_form form="main_page" />
+<txp:output_form form="section_default" />
 </div>
 </txp:if_section>
 
 <txp:if_section name="about">
 <div class="row">
-<txp:output_form form="about_page" />
+<txp:output_form form="section_about" />
 </div>
 </txp:if_section>
 
@@ -95,29 +83,19 @@
 </txp:if_section>  		
   		
   		
-<section id="sidebar" role="complementary">
-<nav id="sideMenu" role="navigation">
-<ul id="sideMainNav" class="nav-bar">
-<li><a href="<txp:site_url />about">About</a></li>
-<li><a href="<txp:site_url />projects">Projects</a></li>
-<li><a href="<txp:site_url />contact">Contact</a></li>
-</ul>
-</nav>
-</section>
-		
 
 
   <!-- Footer -->
 
   <footer class="row">
-    <div class="twelve columns">
+    <div class="large-12 columns">
       <hr />
       <div class="row">
-        <div class="six columns">
+        <div class="large-6 columns">
           <p>&copy; DGL Architects, Singapore</p>
         </div>
         <div class="six columns">
-          <ul class="link-list right">
+          <ul class="inline-list">
             <li><a href="<txp:site_url />"><txp:site_name /></a></li>
             <li><a href="<txp:site_url />about">About</a></li>
             <li><a href="<txp:site_url />projects">Projects</a></li>
@@ -135,24 +113,20 @@
 
 
   
-
-
   
-  	<!-- Included JS Files -->
-  <script src="<txp:site_url />foundation/javascripts/jquery.js"></script>
-  <script src="<txp:site_url />foundation/javascripts/jquery.foundation.reveal.js"></script>
-  <script src="<txp:site_url />foundation/javascripts/jquery.foundation.orbit.js"></script>
-  <script src="<txp:site_url />foundation/javascripts/jquery.foundation.forms.js"></script>
-  <script src="<txp:site_url />foundation/javascripts/jquery.placeholder.js"></script>
-  <script src="<txp:site_url />foundation/javascripts/jquery.foundation.tooltips.js"></script>
-  <script src="<txp:site_url />foundation/javascripts/jquery.foundation.alerts.js"></script>
-  <script src="<txp:site_url />foundation/javascripts/jquery.foundation.buttons.js"></script>
-  <script src="<txp:site_url />foundation/javascripts/jquery.foundation.accordion.js"></script>
-  <script src="<txp:site_url />foundation/javascripts/jquery.foundation.navigation.js"></script>
-  <script src="<txp:site_url />foundation/javascripts/jquery.foundation.mediaQueryToggle.js"></script>
-  <script src="<txp:site_url />foundation/javascripts/jquery.foundation.tabs.js"></script>
-  <script src="<txp:site_url />foundation/javascripts/jquery.offcanvas.js"></script>
-  <script src="<txp:site_url />foundation/javascripts/app.js"></script>
+<!-- Check for Zepto support, load jQuery if necessary -->
+<script>
+  document.write('<script src=<txp:site_url />foundation/js/vendor/'
+    + ('__proto__' in {} ? 'zepto' : 'jquery')
+    + '.js><\/script>');
+</script>  
+
+<script src="<txp:site_url />foundation/js/foundation/index.js"></script>
+
+<!-- Initialize Foundation -->
+<script>
+  $(document).foundation();
+</script>
 
 </body>
 </html>

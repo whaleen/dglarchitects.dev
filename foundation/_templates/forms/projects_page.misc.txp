@@ -1,10 +1,15 @@
+<txp:if_individual_article>
+
+<!-- Project: -->
+<txp:article form="project" />
+
+<txp:else />
+
+
+<!-- List Projects: -->
 <txp:article_custom section="projects">
 
-
-
-
-
-<div class="four columns">
+<div class="large-4 columns">
 <a href="#">
 <div class="panel" style="background-image: url(); height:150px;">
 <h5><txp:title /></h5>
@@ -13,5 +18,6 @@
 </a>
 </div>
 
-
 </txp:article_custom>
+
+</txp:if_individual_article>
