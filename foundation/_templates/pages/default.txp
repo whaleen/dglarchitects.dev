@@ -97,10 +97,8 @@
         <div class="six columns">
           <ul class="inline-list">
             <li><a href="<txp:site_url />"><txp:site_name /></a></li>
-            <li><a href="<txp:site_url />about">About</a></li>
             <li><a href="<txp:site_url />projects">Projects</a></li>
             <li><a href="<txp:site_url />contact">Contact</a></li>
-            <li><a href="<txp:site_url />testimonials">Testimonials</a></li>
           </ul>
         </div>
       </div>
