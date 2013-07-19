@@ -71,14 +71,14 @@
 
 <txp:if_section name="projects">
 <div class="row">
-<txp:output_form form="projects_page" />
+<txp:output_form form="sections_projects" />
 </div>
 </txp:if_section>
 
 
 <txp:if_section name="contact">
 <div class="row">
-<txp:output_form form="contact_page" />
+<txp:output_form form="section_contact" />
 </div>
 </txp:if_section>  		
   		
